@@ -87,14 +87,14 @@ class RegisterWhitelist
 		<link rel="stylesheet" href="<?= plugin_dir_url( __FILE__ ) ?>assets/css/style.css?<?= $css_cache_bust ?>">
 		<div class="pbaorw-container">
 			<h2>Registration Whitelist</h2>
-			<?php if ( ! empty( $message ) ): ?>
-			<div class="message <?= empty( $errors ) ? 'success' : 'error' ?>"><?= $message ?></div>
-			<?php endif; ?>
 			<p>
 				Restrict front-end user registration based on the domain name of their email address.
 				Be sure to set <em>"Email Confirmation" Activated</em> to <em>Yes</em> in the
 				<a href="?page=profile-builder-general-settings">General Settings</a> page for this whitelist to have the greatest effect.
 			</p>
+			<?php if ( ! empty( $message ) ): ?>
+			<div class="message <?= empty( $errors ) ? 'success' : 'error' ?>"><?= $message ?></div>
+			<?php endif; ?>
 			<form method="post">
 				<label for="whitelist">Whitelist domains: <span class="field-instructions">one per line</span></label>
 				<textarea name="wppb_whitelist"><?= $whitelist ?></textarea>

@@ -1,0 +1,45 @@
+.pbaorw-container ul {
+    list-style: disc;
+    margin-left: 2em;
+}
+
+.pbaorw-container label {
+    font-weight: bold;
+    display: block;
+}
+
+.pbaorw-container .field-instructions {
+    font-size: .75em;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.pbaorw-container textarea {
+    width: 400px;
+    height: 200px;
+    max-width: 100%;
+}
+
+.pbaorw-container button[type=submit] {
+    display: block;
+    margin-top: 1em;
+}
+
+.pbaorw-container .message {
+    border: solid 2px transparent;
+    border-radius: .25em;
+    margin: 1em;
+    padding: 1em;
+    font-size: 1.2em;
+}
+
+.pbaorw-container .message.error {
+    background-color: rgba(255, 0, 0, .2);
+    border-color: rgba(255, 0, 0, .5);
+}
+
+.pbaorw-container .message.success {
+    background-color: rgba(0, 255, 0, .3);
+    border-color: rgba(0, 175, 0, 1);
+}
+
